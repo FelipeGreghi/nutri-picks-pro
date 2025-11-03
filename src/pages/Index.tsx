@@ -1,13 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Hero } from "@/components/sections/Hero";
+import { ForWhom } from "@/components/sections/ForWhom";
+import { BeforeAfter } from "@/components/sections/BeforeAfter";
+import { WhatYouGet } from "@/components/sections/WhatYouGet";
+import { Categories } from "@/components/sections/Categories";
+import { Bonuses } from "@/components/sections/Bonuses";
+import { CTASection } from "@/components/sections/CTASection";
+import { AboutAuthor } from "@/components/sections/AboutAuthor";
+import { Guarantee } from "@/components/sections/Guarantee";
+import { FinalOffer } from "@/components/sections/FinalOffer";
+import { Footer } from "@/components/sections/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <Hero />
+      <ForWhom />
+      <BeforeAfter />
+      <WhatYouGet />
+      <Categories />
+      <Bonuses />
+      <CTASection />
+      <AboutAuthor />
+      <Guarantee />
+      <FinalOffer />
+      <Footer />
+    </main>
   );
 };
 
