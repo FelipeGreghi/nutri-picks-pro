@@ -8,56 +8,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Base Colors - Guia de Compras Theme */
-    --background: 40 25% 98%;  /* Off White #FAFAF7 */
-    --foreground: 192 56% 19%;  /* Calm Blue Dark */
+    /* Base Colors - Katrin Gatz Theme */
+    --background: 42 100% 98%;  /* Off White #FFFCF5 */
+    --foreground: 207 73% 26%;  /* Calm Blue #124772 */
     
-    --sand: 36 40% 96%;  /* Sand #F6F2EB */
-    --off-white: 40 25% 98%;  /* Off White */
+    --sand: 42 22% 86%;  /* Sand #E2DED5 */
+    --off-white: 42 100% 98%;  /* Off White */
 
-    --card: 40 25% 98%;
-    --card-foreground: 192 56% 19%;
+    --card: 42 100% 98%;
+    --card-foreground: 207 73% 26%;
 
-    --popover: 40 25% 98%;
-    --popover-foreground: 192 56% 19%;
+    --popover: 42 100% 98%;
+    --popover-foreground: 207 73% 26%;
 
-    /* Primary - Calm Blue #1E5E6F */
-    --primary: 192 56% 27%;
-    --primary-foreground: 40 25% 98%;
-    --primary-light: 192 56% 40%;
+    /* Primary - Calm Rose #C16B8E */
+    --primary: 336 42% 59%;
+    --primary-foreground: 42 100% 98%;
+    --primary-light: 336 42% 70%;
     
-    /* Secondary - Calm Green #008F7A */
-    --secondary: 171 100% 28%;
-    --secondary-foreground: 40 25% 98%;
-    --secondary-light: 171 100% 40%;
+    /* Secondary - Calm Blue #124772 */
+    --secondary: 207 73% 26%;
+    --secondary-foreground: 42 100% 98%;
+    --secondary-light: 207 73% 40%;
 
-    --muted: 36 40% 96%;
-    --muted-foreground: 192 20% 45%;
+    --muted: 42 22% 86%;
+    --muted-foreground: 207 30% 45%;
 
-    --accent: 171 100% 28%;
-    --accent-foreground: 40 25% 98%;
+    --accent: 336 42% 59%;
+    --accent-foreground: 42 100% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 40 25% 98%;
+    --destructive-foreground: 42 100% 98%;
     
     --warning: 36 100% 50%;
-    --warning-foreground: 192 56% 19%;
+    --warning-foreground: 207 73% 26%;
 
-    --border: 36 20% 88%;
-    --input: 36 20% 88%;
-    --ring: 192 56% 27%;
+    --border: 42 15% 88%;
+    --input: 42 15% 88%;
+    --ring: 336 42% 59%;
 
     --radius: 0.75rem;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(192 56% 27%) 0%, hsl(171 100% 28%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(171 100% 28%) 0%, hsl(171 100% 40%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(40 25% 98%) 0%, hsl(36 40% 96%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(336 42% 59%) 0%, hsl(207 73% 26%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(336 42% 59%) 0%, hsl(336 42% 70%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(42 100% 98%) 0%, hsl(42 22% 86%) 100%);
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(192 56% 27% / 0.1);
-    --shadow-card: 0 8px 30px -8px hsl(192 56% 27% / 0.15);
-    --shadow-elevated: 0 20px 60px -12px hsl(192 56% 27% / 0.25);
+    --shadow-soft: 0 4px 20px -4px hsl(336 42% 59% / 0.1);
+    --shadow-card: 0 8px 30px -8px hsl(336 42% 59% / 0.15);
+    --shadow-elevated: 0 20px 60px -12px hsl(336 42% 59% / 0.25);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -111,10 +111,10 @@ All colors MUST be HSL.
   
   @keyframes pulse-glow {
     0%, 100% {
-      box-shadow: 0 0 0 0 hsl(171 100% 28% / 0.4);
+      box-shadow: 0 0 0 0 hsl(336 42% 59% / 0.4);
     }
     50% {
-      box-shadow: 0 0 0 12px hsl(171 100% 28% / 0);
+      box-shadow: 0 0 0 12px hsl(336 42% 59% / 0);
     }
   }
   
