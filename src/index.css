@@ -9,11 +9,11 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Base Colors - Katrin Gatz Theme */
-    --background: 42 100% 98%;  /* Off White #FFFCF5 */
-    --foreground: 207 73% 26%;  /* Calm Blue #124772 */
-    
-    --sand: 42 22% 86%;  /* Sand #E2DED5 */
-    --off-white: 42 100% 98%;  /* Off White */
+    --background: 42 100% 98%; /* Off White #FFFCF5 */
+    --foreground: 207 73% 26%; /* Calm Blue #124772 */
+
+    --sand: 42 22% 86%; /* Sand #E2DED5 */
+    --off-white: 42 100% 98%; /* Off White */
 
     --card: 42 100% 98%;
     --card-foreground: 207 73% 26%;
@@ -25,7 +25,7 @@ All colors MUST be HSL.
     --primary: 336 42% 59%;
     --primary-foreground: 42 100% 98%;
     --primary-light: 336 42% 70%;
-    
+
     /* Secondary - Calm Blue #124772 */
     --secondary: 207 73% 26%;
     --secondary-foreground: 42 100% 98%;
@@ -39,7 +39,7 @@ All colors MUST be HSL.
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 42 100% 98%;
-    
+
     --warning: 36 100% 50%;
     --warning-foreground: 207 73% 26%;
 
@@ -48,17 +48,29 @@ All colors MUST be HSL.
     --ring: 336 42% 59%;
 
     --radius: 0.75rem;
-    
+
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(336 42% 59%) 0%, hsl(207 73% 26%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(336 42% 59%) 0%, hsl(336 42% 70%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(42 100% 98%) 0%, hsl(42 22% 86%) 100%);
-    
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(336 42% 59%) 0%,
+      hsl(207 73% 26%) 100%
+    );
+    --gradient-cta: linear-gradient(
+      135deg,
+      hsl(336 42% 59%) 0%,
+      hsl(336 42% 70%) 100%
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      hsl(42 100% 98%) 0%,
+      hsl(42 22% 86%) 100%
+    );
+
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(336 42% 59% / 0.1);
     --shadow-card: 0 8px 30px -8px hsl(336 42% 59% / 0.15);
     --shadow-elevated: 0 20px 60px -12px hsl(336 42% 59% / 0.25);
-    
+
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -74,15 +86,25 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
     font-weight: 700;
     line-height: 1.2;
   }
-  
-  p, span, a, button, input, textarea {
-    font-family: 'Inter', sans-serif;
+
+  p,
+  span,
+  a,
+  button,
+  input,
+  textarea {
+    font-family: "Inter", sans-serif;
   }
 }
 
@@ -90,34 +112,51 @@ All colors MUST be HSL.
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .text-gradient {
     @apply bg-clip-text text-transparent;
     background-image: var(--gradient-hero);
   }
-  
+
   .card-hover {
     transition: var(--transition-smooth);
   }
-  
+
   .card-hover:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-elevated);
   }
-  
+
   .btn-pulse {
     animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
-  
+
   @keyframes pulse-glow {
-    0%, 100% {
+    0%,
+    100% {
       box-shadow: 0 0 0 0 hsl(336 42% 59% / 0.4);
     }
     50% {
       box-shadow: 0 0 0 12px hsl(336 42% 59% / 0);
     }
   }
-  
+
+  @keyframes pulse-slow {
+    0%,
+    100% {
+      opacity: 0.4;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 8s ease-in-out infinite;
+  }
+
   @keyframes fade-up {
     from {
       opacity: 0;
@@ -128,7 +167,7 @@ All colors MUST be HSL.
       transform: translateY(0);
     }
   }
-  
+
   .animate-fade-up {
     animation: fade-up 0.6s ease-out;
   }

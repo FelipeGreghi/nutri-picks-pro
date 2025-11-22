@@ -29,13 +29,14 @@ const categories = [
 
 export const Categories = () => {
   return (
-    <section className="py-20 lg:py-32 bg-background">
+    <section className="py-5 lg:py-10 bg-white">
       <div className="section-container">
         <div className="max-w-5xl mx-auto space-y-12">
           {/* Header */}
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold">
-              Categorias de Alimentos <span className="text-gradient">Analisadas</span>
+              Categorias de Alimentos{" "}
+              <span className="text-gradient">Analisadas</span>
             </h2>
             <p className="text-xl text-muted-foreground">
               Mais de 24 categorias do seu dia a dia
@@ -45,7 +46,7 @@ export const Categories = () => {
           {/* Categories Grid */}
           <div className="flex flex-wrap justify-center gap-3">
             {categories.map((category, index) => (
-              <Badge 
+              <Badge
                 key={index}
                 variant="outline"
                 className="px-4 py-2 text-sm border-primary/20 hover:bg-primary/5 hover:border-primary/40 transition-colors"

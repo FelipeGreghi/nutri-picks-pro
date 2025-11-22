@@ -12,7 +12,7 @@ const targetAudience = [
 
 export const ForWhom = () => {
   return (
-    <section className="py-20 lg:py-32 bg-sand">
+    <section className="py-5 lg:py-10 bg-sand">
       <div className="section-container">
         <div className="max-w-4xl mx-auto space-y-12">
           {/* Header */}
@@ -25,9 +25,9 @@ export const ForWhom = () => {
           {/* Grid of Target Points */}
           <div className="grid md:grid-cols-2 gap-6">
             {targetAudience.map((item, index) => (
-              <Card 
+              <Card
                 key={index}
-                className="p-6 bg-background border-primary/10 card-hover"
+                className="p-6 bg-white/40 border-primary/10 card-hover"
               >
                 <div className="flex items-start gap-4">
                   <div className="rounded-full bg-secondary/10 p-3 shrink-0">
@@ -48,8 +48,11 @@ export const ForWhom = () => {
               <div className="space-y-2">
                 <h3 className="text-xl font-bold text-destructive">Atenção</h3>
                 <p className="text-foreground leading-relaxed">
-                  Este guia <span className="font-semibold">NÃO é para você</span> se busca receitas prontas, dietas milagrosas ou soluções mágicas. 
-                  Este é um guia prático sobre como escolher produtos no supermercado — não um plano alimentar.
+                  Este guia{" "}
+                  <span className="font-semibold">NÃO é para você</span> se
+                  busca receitas prontas, dietas milagrosas ou soluções mágicas.
+                  Este é um guia prático sobre como escolher produtos no
+                  supermercado — não um plano alimentar.
                 </p>
               </div>
             </div>

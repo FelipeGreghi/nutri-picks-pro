@@ -19,13 +19,14 @@ const afterPoints = [
 
 export const BeforeAfter = () => {
   return (
-    <section className="py-20 lg:py-32 bg-background">
+    <section className="py-5 lg:py-10 bg-white">
       <div className="section-container">
         <div className="max-w-5xl mx-auto space-y-12">
           {/* Header */}
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold">
-              Sua Experiência no <span className="text-gradient">Supermercado</span>
+              Sua Experiência no{" "}
+              <span className="text-gradient">Supermercado</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Veja a transformação que este guia pode trazer para sua vida

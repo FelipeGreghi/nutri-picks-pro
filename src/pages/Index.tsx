@@ -9,19 +9,25 @@ import { AboutAuthor } from "@/components/sections/AboutAuthor";
 import { Guarantee } from "@/components/sections/Guarantee";
 import { FinalOffer } from "@/components/sections/FinalOffer";
 import { Footer } from "@/components/sections/Footer";
+import { SectionSeparator } from "@/components/sections/Separator";
 
 const Index = () => {
   return (
     <main className="min-h-screen">
       <Hero />
       <ForWhom />
+      <SectionSeparator variant="wave" />
       <BeforeAfter />
       <WhatYouGet />
       <Categories />
-      <Bonuses />
+      <SectionSeparator variant="line" />
       <CTASection />
       <AboutAuthor />
+      <SectionSeparator variant="wave" />
+      <Bonuses />
+      <SectionSeparator variant="line" />
       <Guarantee />
+      <SectionSeparator variant="line" />
       <FinalOffer />
       <Footer />
     </main>

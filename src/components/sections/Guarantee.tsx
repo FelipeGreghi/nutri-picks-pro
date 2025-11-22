@@ -3,7 +3,7 @@ import { Shield, Zap, Heart } from "lucide-react";
 
 export const Guarantee = () => {
   return (
-    <section className="py-20 lg:py-32 bg-sand">
+    <section className="py-5 lg:py-10 bg-white">
       <div className="section-container">
         <div className="max-w-4xl mx-auto space-y-12">
           {/* Header */}
@@ -20,11 +20,14 @@ export const Guarantee = () => {
           </div>
 
           {/* Main Card */}
-          <Card className="p-10 bg-background border-primary/20 text-center space-y-8">
+          <Card className="p-10 bg-sand/30 border-primary/20 text-center space-y-8">
             <p className="text-xl text-foreground leading-relaxed max-w-2xl mx-auto">
-              Se dentro de <span className="font-bold text-primary">7 dias</span> você não estiver <span className="font-bold">100% satisfeito</span> com o conteúdo do guia, devolvemos seu dinheiro integralmente.
+              Se dentro de{" "}
+              <span className="font-bold text-primary">7 dias</span> você não
+              estiver <span className="font-bold">100% satisfeito</span> com o
+              conteúdo do guia, devolvemos seu dinheiro integralmente.
             </p>
-            
+
             <p className="text-lg text-muted-foreground">
               Sem perguntas, sem burocracia.
             </p>
@@ -35,19 +38,25 @@ export const Guarantee = () => {
                 <div className="rounded-full bg-secondary/10 p-2">
                   <Shield className="w-6 h-6 text-secondary" />
                 </div>
-                <span className="font-semibold text-foreground">Sem riscos</span>
+                <span className="font-semibold text-foreground">
+                  Sem riscos
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="rounded-full bg-secondary/10 p-2">
                   <Zap className="w-6 h-6 text-secondary" />
                 </div>
-                <span className="font-semibold text-foreground">Reembolso rápido</span>
+                <span className="font-semibold text-foreground">
+                  Reembolso rápido
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="rounded-full bg-secondary/10 p-2">
                   <Heart className="w-6 h-6 text-secondary" />
                 </div>
-                <span className="font-semibold text-foreground">Nossa confiança</span>
+                <span className="font-semibold text-foreground">
+                  Nossa confiança
+                </span>
               </div>
             </div>
           </Card>

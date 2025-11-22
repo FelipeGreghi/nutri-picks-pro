@@ -6,18 +6,20 @@ const bonuses = [
   {
     icon: BookOpen,
     title: "Manual de Organização e Planejamento Alimentar",
-    description: "Aprenda a planejar suas refeições da semana com praticidade e organização",
+    description:
+      "Aprenda a planejar suas refeições da semana com praticidade e organização",
   },
   {
     icon: Utensils,
     title: "50 Combinações Saudáveis para Almoços e Jantares",
-    description: "Ideias práticas e saudáveis sem repetição para variar seu cardápio",
+    description:
+      "Ideias práticas e saudáveis sem repetição para variar seu cardápio",
   },
 ];
 
 export const Bonuses = () => {
   return (
-    <section className="py-20 lg:py-32 bg-sand">
+    <section className="py-5 lg:py-10 bg-sand border-secondary/20 ">
       <div className="section-container">
         <div className="max-w-5xl mx-auto space-y-12">
           {/* Header */}
@@ -29,7 +31,8 @@ export const Bonuses = () => {
               Leve Também <span className="text-gradient">Grátis!</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Além do Guia de Compras Inteligentes, você recebe sem custo adicional:
+              Além do Guia de Compras Inteligentes, você recebe sem custo
+              adicional:
             </p>
           </div>
 
@@ -38,9 +41,9 @@ export const Bonuses = () => {
             {bonuses.map((bonus, index) => {
               const Icon = bonus.icon;
               return (
-                <Card 
+                <Card
                   key={index}
-                  className="p-8 bg-background border-secondary/20 space-y-6 card-hover relative overflow-hidden"
+                  className="p-8 bg-white border-secondary/20 space-y-6 card-hover relative overflow-hidden"
                 >
                   {/* Free Badge */}
                   <div className="absolute top-4 right-4">
@@ -69,7 +72,10 @@ export const Bonuses = () => {
           {/* Bottom Note */}
           <div className="text-center">
             <p className="text-lg text-muted-foreground">
-              <span className="font-semibold text-secondary">Incluído nesta oferta especial</span> — Valor adicional sem custo extra
+              <span className="font-semibold text-secondary">
+                Incluído nesta oferta especial
+              </span>{" "}
+              — Sem custo adicional!
             </p>
           </div>
         </div>

@@ -9,13 +9,19 @@ export const CTASection = () => {
   };
 
   return (
-    <section id="cta-section" className="py-20 lg:py-32 bg-gradient-to-br from-primary via-primary-light to-secondary relative overflow-hidden">
+    <section
+      id="cta-section"
+      className="py-5 lg:py-10 bg-gradient-to-br from-primary via-primary-light to-secondary relative overflow-hidden"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 30% 50%, white 2px, transparent 2px)`,
-          backgroundSize: '60px 60px'
-        }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `radial-gradient(circle at 30% 50%, white 2px, transparent 2px)`,
+            backgroundSize: "60px 60px",
+          }}
+        />
       </div>
 
       <div className="section-container relative z-10">
@@ -26,14 +32,16 @@ export const CTASection = () => {
               Sua Próxima Ida ao Supermercado Pode Ser Completamente Diferente
             </h2>
             <p className="text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-              Imagine entrar no mercado com total confiança, saber exatamente o que escolher, economizar dinheiro e ainda sair de lá sabendo que fez as melhores escolhas para sua saúde.
+              Imagine entrar no mercado com total confiança, saber exatamente o
+              que escolher, economizar dinheiro e ainda sair de lá sabendo que
+              fez as melhores escolhas para sua saúde.
             </p>
           </div>
 
           {/* CTA Button */}
           <div className="flex flex-col items-center gap-6">
-            <Button 
-              variant="ctaLarge" 
+            <Button
+              variant="ctaLarge"
               size="xl"
               className="bg-white text-primary hover:bg-white/95 shadow-2xl hover:scale-105 transition-transform duration-300 btn-pulse"
               onClick={handleCTAClick}
@@ -48,7 +56,9 @@ export const CTASection = () => {
               <div className="rounded-full bg-white/10 p-2">
                 <Shield className="w-5 h-5" />
               </div>
-              <span className="text-sm font-medium">Compra segura e protegida</span>
+              <span className="text-sm font-medium">
+                Compra segura e protegida
+              </span>
             </div>
             <div className="flex items-center gap-2 text-white/90">
               <div className="rounded-full bg-white/10 p-2">
@@ -60,7 +70,9 @@ export const CTASection = () => {
               <div className="rounded-full bg-white/10 p-2">
                 <Heart className="w-5 h-5" />
               </div>
-              <span className="text-sm font-medium">Garantia incondicional de 7 dias</span>
+              <span className="text-sm font-medium">
+                Garantia incondicional de 7 dias
+              </span>
             </div>
           </div>
         </div>
