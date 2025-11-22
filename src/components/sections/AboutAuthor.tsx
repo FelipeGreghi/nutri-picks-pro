@@ -5,12 +5,14 @@ import { GraduationCap, Award, Target, Heart } from "lucide-react";
 import { useState, useEffect } from "react";
 
 // Imagens em `public/` devem ser referenciadas por caminho absoluto
-const authorImage1 = "/IMG_0912.jpg";
+const authorImage1 = "/IMG_0906 (2).jpg";
 const authorImage2 = "/IMG_0905.jpg";
+const authorImage3 = "/IMG_0949.jpg";
+const authorImage4 = "/IMG_1026.jpg";
 
 export const AboutAuthor = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const images = [authorImage1, authorImage2];
+  const images = [authorImage1, authorImage2, authorImage3, authorImage4];
 
   // Alternância automática de imagens a cada 4 segundos
   useEffect(() => {
@@ -90,7 +92,7 @@ export const AboutAuthor = () => {
                 {/* Badge flutuante */}
                 <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white rounded-xl shadow-lg px-6 py-3 border border-calm-rose/10">
                   <p className="text-sm font-semibold text-calm-blue whitespace-nowrap">
-                    CRN-3 52641
+                    Apaixonada por nutrição
                   </p>
                 </div>
               </div>
@@ -115,7 +117,7 @@ export const AboutAuthor = () => {
                       <p className="text-foreground leading-relaxed text-sm">
                         Graduada pela Universidade Federal do Triângulo Mineiro
                         (UFTM), com Pós-graduação em Nutrição Estética e Saúde
-                        da Mulher
+                        da Mulher - CRN-3 52641.
                       </p>
                     </div>
                   </div>
